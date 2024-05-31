@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <script defer src="script.js"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Anta&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+   <title>Contact Us - Apparel Co.</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navContent">
+            <a href="index.html">
+                <img src="LOGO/LOGO.png" alt="Logo" class="logoImg">
+            </a>
+            <a href="byxor.html">PANTS</a>
+            <a href="skor.html">SHOES</a>
+            <a href="contact-us.html">CONTACT US</a>
+            <a href="#">ABOUT US</a>
+            <a href="#" class="search">SEARCH</a>
+        </div>
+        <a class="hamburgerIcon" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40" fill="#b08307"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        <ul class="sidebar">
+            <li><a href="#" class="closeSidebar"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40" fill="#b08307"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="byxor.html" class="SideBtn">PANTS</a></li>
+            <li><a href="skor.html" class="SideBtn">SHOES</a></li>
+            <li><a href="contact-us.html" class="SideBtn">CONTACT US</a></li>
+            <li><a href="#" class="SideBtn">ABOUT US</a></li>
+            <li><a href="#" class="SideBtn">SEARCH</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Contact Us!</h1>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> support@apparelco.com</p>
+            <p><strong>Phone:</strong> +47 12345678</p>
+            <p><strong>Address:</strong> Östra Hamngatan 13, 411 10 Göteborg</p>
+            <p>Follow us on social media:</p>
+            <p>
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">Instagram</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Apparel Co. All rights reserved. | </p>
+    </footer>
+</body>
+</html>
